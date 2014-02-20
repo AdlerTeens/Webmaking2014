@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -34,7 +33,7 @@
 <p><a href="Thomas Janopoulos/Profile.html">Thomas Janopoulos</a></p>
 <p><a href="Viveca Vaughn/Profile.html">Viveca Vaughn</a></p>
 <p><a href="Kelly Borden/Profile.html">Kelly Borden</a></p>
-<p><a href="StudentProfiles/Jennifer Bundy/Profile.html">Jennifer Bundy</a></p>
+<p><a href="Student Profiles/Jennifer Bundy/Profile.html">Jennifer Bundy</a></p>
 <p><a href="Nathalie Rayter/Profile.html">Nathalie Rayter</a></p>
 
 
