@@ -1,0 +1,127 @@
+/*Introduction to CSS: Cascading Style Sheets*/
+
+/* 
+Code inside of these tags is 'commented' meaning that it 
+is is not read by your computer
+
+You can uncomment code in sublime by highlighting it and 
+typing 'command + /'
+
+let's get started!
+*/
+
+/*uncomment lines 13-15 to change the color of all the paragraphs to blue*/
+
+p {
+  color: blue;
+}
+
+/*
+The 'h1' on line 13 tells the computer which code to apply styling to. 
+This is called a 'selector'. In this case it is applying styling to all 
+of the 'h1' elements
+
+Place all of your styling rules inside of wavy brackets after your selector.
+Convention is to place a opening wavy bracket after your selector, and a closing
+wavy bracket after your last rule.
+
+Rules are created in the format:
+  name-of-rule: attribute;
+
+Be sure to place a semi-colon after your rule name and a colon after the rule attribute(s)
+This tells you computer when to go to the next rule.
+
+If you have multiple rules place them on their own line so they are easier to read,
+and indent each rule with a 'tab' so they are more readable.
+*/
+
+/*lets make all of the h1 elements centered on the page*/
+
+h1 {
+  text-align: center;
+}
+
+/*add multiple rules for the same selector, these will be applied to 'body'*/
+
+body {
+  background-color: grey;
+  margin: 40px;                /*This sets a margin of 40px for the top, right, bottom, and left sides of the page*/
+  font-family: Helvetica;
+}
+
+/*seperate selectors with commas to apply rules to multiple elements at a time*/
+
+h2, h3 {
+  text-decoration: underline;
+}
+
+/*
+You can add 'class' or 'id' attributes in your html file to target a specific group of 
+elements (using a class) or a single element (using an id)
+an example would be:
+
+in your .html file...
+
+<p id="my-id"></p>
+<p class="my-class"></p>
+<p class="my-class"></p>
+
+These elements are then available to be targeted in css:
+*/
+
+/*add a '#' character to target elements with an id*/
+
+#my-id {
+  background-color: whitesmoke;
+  padding: 30px;
+}
+
+/*add a '.' character to target elements with a class*/
+
+.my-class {
+  color: #c64417;  /*colors can be defined using a name, or a HEX value, as shown here*/
+}
+
+/*
+If you have nested elements you can target them by adding multiple tags
+seperated by a comma
+*/
+
+/*this will target all of the 'span' elements inside of 'h2' tags*/
+
+h2 span {
+  color: green; /*change the text color to green*/
+  font-style: italic;  /*italicize fonts*/
+}
+
+/* This will remove the default indentation, or 'padding' the browser gives to unordered list ('ul') elements*/
+
+#my-id ul {
+  padding: 0; 
+}
+
+/*This will target all of your list items inside of a 'ul' tag inside of your 'my-id' id*/
+
+#my-id ul li {
+  width: 200px;                   /*make each 'li' 200px wide*/
+  list-style-type: none;          /*remove bullet points*/
+  font-size: 14px;                /*change font-size*/
+  font-family: 'Trebuchet MS';    /*change font style*/
+  margin-bottom: 10px;
+  border: 1px solid orange;
+  padding: 5px;
+}
+
+/*
+The following uses a 'pseudo selector' called :hover to only target elements
+when they are being hovered over by the cursor.
+It adds a blue background color that eases in after 3 seconds
+
+Notice how the transition rule takes a list of properties. There are many
+CSS rules that take more than 1 property.
+*/
+
+#my-id ul li:hover {
+  transition: background-color 3s ease;
+  background-color: #3172c6;
+}
